@@ -1,0 +1,105 @@
+
+<div class="contianer-fluid">
+    <div class="row">
+        <div class="col-lg-4"></div>
+        
+        <div class="col-lg-4 ">
+            <form #userPost="ngForm" onsubmit="userPost.value">
+            <div class="card mt-2" style="background-color: rgb(170, 189, 206);">
+                <div class="card-header  text-center" style="color: rgba(209, 253, 13, 0.918);background-color: rgba(12, 4, 10, 0.849);" >
+                    <h4>Aplication-Registration</h4>
+                </div>
+                <div class="card-body">
+                    <div class="col-sm-10">
+                        First Name :
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-inline">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                </div>
+                             <input type="text" class="form-control" placeholder="Enter First Name" [(ngModel)]="newUserCitizen.FirstName">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-10">
+                        Last Name :
+                    </div>
+                    <div class="col-sm-12 ">
+                        <div class="form-inline">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Enter Last Name" [(ngModel)]="newUserCitizen.LastName">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-10">
+                        Date Of Birth :
+                    </div>
+                    <div class="col-sm-12 ">
+                        <div class="form-inline">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="choose date of birth" [(ngModel)]="newUserCitizen.DateOfBirth">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-10">
+                        Gender :
+                    </div>
+                    <div class="col-sm-10">
+                        <div class="form-check">
+                            <label class="form-check-label" for="radio1">
+                              <input type="radio" class="form-check-input"  name="optradio" value="Male" [(ngModel)]="newUserCitizen.Gender" checked>Male &nbsp;&nbsp;&nbsp;&nbsp;
+                              <input type="radio" class="form-check-input" name="optradio" value="Fe-Male"[(ngModel)]="newUserCitizen.Gender" checked>Fe-Male
+                            </label>
+                          </div>
+                    </div>
+                    <div class="col-sm-10">
+                        SSN No :
+                    </div>
+                    <div class="col-sm-12">
+                        <input type="text" class="form-control" placeholder="Enter SSN number" [(ngModel)]="newUserCitizen.SSNNo">
+                    </div>
+                    <div class="col-sm-10">
+                        Phone Number :
+                    </div>
+                    <div class="col-sm-12">
+                        <input type="text" class="form-control" placeholder="Enter Phone Number" [(ngModel)]="newUserCitizen.PhoneNumber">
+                    </div>
+                    <div class="col-sm-10">
+                        Email-Id :
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-inline">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Enter Email" [(ngModel)]="newUserCitizen.EmailId">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-10">
+                        StateName :
+                    </div>
+                    <div class="col-sm-12">
+                        <input type="text" class="form-control" placeholder="Enter State Name" [(ngModel)]="newUserCitizen.StateName">
+                    </div>
+                    <div class="col-sm-12 mt-2">
+                        <button type="submit" (click)="onSaveClick()" class="btn btn-success form-control"><b>Register</b></button>
+                    </div>
+                </div>
+            </div>
+            </form>
+        </div>
+       
+        <div class="col-lg-4"></div>
+    </div>
+</div>
+

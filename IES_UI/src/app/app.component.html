@@ -1,0 +1,53 @@
+<h4 class="text-center"><b>IES PROJECT</b></h4>
+<nav class="navbar navbar-expand-sm navbar-dark" style="background-color:  rgb(56, 56, 182);">
+  <a class="navbar-brand">
+    <img src="assets/Insurance.jpg" width="60px" height="60px">
+  </a>
+ <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynav">
+   <span class="navbar-toggler-icon"></span>
+ </button>
+  <div class="collapse navbar-collapse" id="mynav">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link text-white" href="#">ADMIN</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" routerLink="application-registration">APPLICATION REGISTRATION</a>
+    </li>
+    <li class="nav-item ">
+      <a class="nav-link text-white" routerLink="data-collection">DATA COLLECTION</a>
+    </li>
+    <li class="nav-item ">
+      <a class="nav-link text-white" href="#">ELIGIBILITY CRITERIA</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" href="#">CORRESPONDENCE</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" href="#">BENFIT ISSURANCE</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" href="#">BATCHES</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white">REPORTS</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" href="#">SIGNIN</a>
+    </li>
+  </ul>
+</div>
+  <div class="form-inline">
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="search"><i class="fa fa-search"></i></span>
+        </div>
+        <input type="text" class="form-control" placeholder="search">
+    </div>
+    <button type="button" class="btn btn-success">search</button>
+  </div>
+</nav>
+<div class="contianer-fluid" >
+      <router-outlet></router-outlet>
+  </div>
+
